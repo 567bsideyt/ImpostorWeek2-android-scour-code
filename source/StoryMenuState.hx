@@ -36,7 +36,13 @@ class StoryMenuState extends MusicBeatState
 			['Sussy Bussy', 'Rivals', 'Chewmate'],
 			['Defeat']
 		];
-	}
+	}.         #if android
+
+addVirtualPad(FULL, A_B);
+
+#end
+		
+		
 	var curDifficulty:Int = 1;
 
 	public static var weekUnlocked:Array<Bool> = [true, true, true];
