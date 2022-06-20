@@ -36,11 +36,11 @@ class StoryMenuState extends MusicBeatState
 			['Sussy Bussy', 'Rivals', 'Chewmate'],
 			['Defeat']
 		];
-	}.         #if android
+	}.         
 
-addVirtualPad(FULL, A_B);
 
-#end
+
+
 		
 		
 	var curDifficulty:Int = 1;
@@ -52,7 +52,9 @@ addVirtualPad(FULL, A_B);
 		['', 'bf', 'gf'],
 		['', 'bf', 'gf'],
 		['', 'bf', 'gf']
-	];
+	];#if android
+addVirtualPad(FULL, A_B);
+#end
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
 
