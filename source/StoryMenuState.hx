@@ -52,9 +52,9 @@ class StoryMenuState extends MusicBeatState
 		['', 'bf', 'gf'],
 		['', 'bf', 'gf'],
 		['', 'bf', 'gf']
-	];#if android
-addVirtualPad(FULL, A_B);
-#end
+	];
+
+
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
 
@@ -279,7 +279,9 @@ addVirtualPad(FULL, A_B);
 				grpLocks.add(lock);
 			}
 		}
-
+#if android
+addVirtualPad(FULL, A_B);
+#end
 		trace("Line 96");
 
 		grpWeekCharacters.add(new MenuCharacter(0, 100, 0.5, false));
