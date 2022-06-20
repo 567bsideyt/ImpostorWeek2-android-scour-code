@@ -37,8 +37,10 @@ class StoryMenuState extends MusicBeatState
 			['Defeat']
 		];
 	}.         #if android
-
 addVirtualPad(FULL, A_B);
+#end
+
+
 
 #end
 		
